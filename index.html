@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <title>Hover thing</title>
+  <style type="text/css">
+    #app
+    {
+      width: 500px;
+      height: 300px;
+      border: solid 1px #000;
+    }
+    .container{
+      margin: 100px auto;
+    }
+    .container,
+    .hovering,
+    .not-hovering
+    {
+      display: block;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+    }
+
+    .hovering{
+      background-color: #0f0;
+    }
+
+    .not-hovering {
+      background-color: #f00;
+    }
+  </style>    
+</head>
+<body>
+  <div id="app"></div>
+  <script src="jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="underscore.js" type="text/javascript" charset="utf-8"></script>
+  <script src="backbone.js" type="text/javascript" charset="utf-8"></script>
+  <script src="app.js" type="text/javascript" charset="utf-8"></script>
+
+  <script id="hover-template" type="fuckofftemplate/fuck">
+    <div class='container'></div>
+  </script>
+
+  <script id="on-hover-template" type="fuckofftemplate/fuck">
+    fucking hovering
+  </script>
+
+  <script id="off-hover-template" type="fuckofftemplate/fuck">
+      not fucking hovering
+  </script>
+</body>
+</html>
