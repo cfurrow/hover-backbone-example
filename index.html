@@ -5,31 +5,23 @@
   <style type="text/css">
     #app
     {
-      width: 500px;
-      height: 300px;
+      width: 450px;
+      height: 450px;
       border: solid 1px #000;
     }
     .container{
-      margin: 100px auto;
+      margin: 25px auto;
     }
     .container,
     .hovering,
     .not-hovering
     {
       display: block;
-      width: 100px;
-      height: 100px;
+      width: 410px;
+      height: 410px;
       text-align: center;
     }
-
-    .hovering{
-      background-color: #0f0;
-    }
-
-    .not-hovering {
-      background-color: #f00;
-    }
-  </style>    
+  </style>
 </head>
 <body>
   <div id="app"></div>
@@ -43,11 +35,11 @@
   </script>
 
   <script id="on-hover-template" type="x-template/template">
-    hovering
+    <img src="hovering.png" width="405" height="405" />
   </script>
 
   <script id="off-hover-template" type="x-template/template">
-      not hovering
+    <img src="not-hovering.png" width="405" height="405" />
   </script>
 </body>
 </html>
